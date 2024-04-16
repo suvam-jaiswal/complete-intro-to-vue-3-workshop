@@ -15,16 +15,17 @@
     </div>
 
     <script type="module">
-      import { createApp, ref } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+      import { createApp } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
 
-      createApp({
+      const app = createApp({
         setup() {
-          const message = ref('Hello Vue!')
           return {
             message
           }
         }
-      }).mount('#app')
+      })
+
+      app.mount('#vue-3-app')
     </script>
   </body>
 </html>
