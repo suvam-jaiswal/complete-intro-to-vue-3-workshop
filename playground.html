@@ -10,13 +10,17 @@
   <body>
     <h1>Hello</h1>
     <p>This is My Vue 3 Playground!!</p>
-    <div id="vue-3-app"></div>
+    <div id="vue-3-app">
+      <h2>{{ message }}</h2>
+    </div>
 
     <script>
-      const { createApp } = Vue
+      const { createApp } = Vue;
 
       const app = createApp({
-
+        data: () => ({
+          message: 'This is a message from Vue 3'
+        })
       })
 
       app.mount('#vue-3-app')
